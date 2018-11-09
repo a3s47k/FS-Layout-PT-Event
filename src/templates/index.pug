@@ -1,0 +1,60 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.home-slider
+		.owl-carousel.owl-theme
+			.item
+				img(src="./img/home_slider_1.jpg", alt="")
+				.title
+					.container
+						.row
+							.col-md-7
+								h2 Chúng tôi là FullStack Vietnam
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+			.item
+				img(src="./img/home_slider_1.jpg", alt="")
+				.title
+					.container
+						.row
+							.col-md-7
+								h2 Chúng tôi là FullStack Vietnam
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+			.item
+				img(src="./img/home_slider_1.jpg", alt="")
+				.title
+					.container
+						.row
+							.col-md-7
+								h2 Chúng tôi là FullStack Vietnam
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+		section.home-form
+			.container
+				.row
+					.col.banhxe
+					.col
+						.row
+							.col
+								figure
+									img(src="./img/intro-img-1.png", alt="")
+									figcaption
+										h2 Lorem ipsum dolor
+										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis dolor, modi quibusdam deserunt vel
+										.icon 
+											i.fa.fa-arrow-right
+						.row
+							.col
+								figure
+									img(src="./img/intro-img-1.png", alt="")
+									figcaption
+										h2 Lorem ipsum dolor
+										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis dolor, modi quibusdam deserunt vel
+										.icon 
+											i.fa.fa-arrow-right
