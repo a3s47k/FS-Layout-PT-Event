@@ -266,7 +266,7 @@ body
 			figure
 				&:hover
 					figcaption
-						+pad(45% 2rem 25% 2rem)
+						+pad(15% 2rem 25% 2rem)
 	+media-breakpoint-up(md)
 		.service
 			clip-path: ellipse(100% 75% at 50% 75%)
@@ -274,12 +274,15 @@ body
 				figcaption
 					h4
 						font-size: 1rem
+						+mar(null null -0.5rem null)
 					.detail
-						font-size: 0.7rem
-						font-weight: 300
+						
 				&:hover
 					figcaption
 						+pad(10% 2rem 25% 2rem)
+						.detail
+							font-size: 0.9rem
+						
 	+media-breakpoint-up(lg)
 		.service
 			figure
@@ -543,7 +546,6 @@ body
 						height: 16rem
 						img
 							transform: scale(0.4)
-						
 						figcaption
 							+pad(null 1rem null 1rem)
 							+mar(-4rem null null null)
@@ -560,7 +562,6 @@ body
 		+media-breakpoint-up(xl)
 			.owl-three
 				.item
-					
 					figure
 						img
 							transform: scale(0.4)
@@ -578,27 +579,14 @@ body
 			color: #000
 			+pad(5rem null null null)
 			position: relative
-			
 			&:before
 				+before-tag(-1rem)
-		.phone
-			+pos(abs,null -5rem 5rem null)
-			+phone-bg(5rem,5rem)
-			display: flex
-			background: rgba(red,0.5)
-			i
-				+phone-bg(3rem,3rem)
-				font-size: 2rem
-				color: #fff
-				
-				
 		figure
-			
 			+mar(4rem null 4rem null)
-			background: blue
-			-webkit-box-shadow: 0px 0px 0px 3px blue
-			-moz-box-shadow: 0px 0px 0px 3px blue
-			box-shadow: 0px 0px 0px 3px blue
+			background: #16166c
+			-webkit-box-shadow: 0px 0px 0px 3px #16166c
+			-moz-box-shadow: 0px 0px 0px 3px #16166c
+			box-shadow: 0px 0px 0px 3px #16166c
 			height: 85%
 			img
 				width: 100%
@@ -635,10 +623,30 @@ body
 			figure
 				+mar(4rem null 4rem null)
 				height: 78%
+			
 		+media-breakpoint-up(lg)
 			figure
 				+mar(4rem null 4rem null)
 				height: 80%
+			.phone
+				+pos(abs,null -2rem 3rem null)
+				+phone-bg(3rem,3rem)
+				display: flex
+				background: rgba(red,0.2)
+				i
+					+phone-bg(2rem,2rem)
+					font-size: 1rem
+					color: #fff
+		+media-breakpoint-up(xl)
+			.phone
+				+pos(abs,null -5rem 3rem null)
+				+phone-bg(5rem,5rem)
+				display: flex
+				background: rgba(red,0.2)
+				i
+					+phone-bg(4rem,4rem)
+					font-size: 2rem
+					color: #fff
 	.support
 		background: url('../img/support-bg.png')
 		background-size: cover
@@ -658,7 +666,6 @@ body
 				color: #fff
 				font-weight: 500
 				font-size: 1.5rem
-				
 			.sp-button
 				line-height: 5rem
 				color: #000
@@ -683,7 +690,6 @@ body
 				label
 					color: #fff
 				input
-
 					color: #fff
 					background: none
 					border: none
@@ -701,26 +707,17 @@ body
 			.support-text
 				text-align: left
 				h3
-
 					font-size: 1.5rem
 					font-weight: 300
 				span
-
 					font-size: 1.8rem
-					
-				.detail
 		+media-breakpoint-up(md)
 			.support-text
 				text-align: left
 				h3
-
 					font-size: 1.5rem
-
 				span
-
 					font-size: 1.8rem
-					
-				.detail
 			form
 				text-align: left
 		+media-breakpoint-up(lg)
@@ -729,6 +726,3 @@ body
 					font-size: 1.7rem
 				span
 					font-size: 2rem
-				.detail
-			form
-				

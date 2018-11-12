@@ -34,6 +34,15 @@
 	height: 0.2rem
 	background: linear-gradient(90deg, #404187, #ce3438 )
 	transform: translateX(-50%)
+
+=before-tag-footer($position : 1rem,$vitri: 5%)
+	content: ''
+	display: block
+	+pos(abs,null null $position $vitri)
+	width: 4rem
+	height: 0.1rem
+	background: linear-gradient(90deg, #404187, #ce3438 )
+
 =phone-bg($dai: 5rem, $rong: 5rem)
 	width: $dai
 	height: $rong
