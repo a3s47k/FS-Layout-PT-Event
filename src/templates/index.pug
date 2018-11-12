@@ -8,53 +8,234 @@ block variables
 
 //- Phần khai báo body
 block body
-	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
 	section.home-slider
-		.owl-carousel.owl-theme
+		.owl-one.owl-carousel.owl-theme.text-center
 			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				img(src="./img/home-cover-1.png", alt="home-cover").img-fluid
+				
+				h3 PT EVENTS 
+					span - Ghi lại dấu ấn hạnh phúc của cuộc đời bạn
+				p
+					a.button-slider(href="") Xem thêm
+					
 			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				img(src="./img/home-cover-2.png", alt="home-cover").img-fluid
+				h3 PT EVENTS 
+					span - Ghi lại dấu ấn hạnh phúc của cuộc đời bạn
+				p
+					a.button-slider(href="") Xem thêm
 			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-		section.home-form
-			.container
-				.row
-					.col.banhxe
-					.col
-						.row
-							.col
-								figure
-									img(src="./img/intro-img-1.png", alt="")
-									figcaption
-										h2 Lorem ipsum dolor
-										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis dolor, modi quibusdam deserunt vel
-										.icon 
-											i.fa.fa-arrow-right
-						.row
-							.col
-								figure
-									img(src="./img/intro-img-1.png", alt="")
-									figcaption
-										h2 Lorem ipsum dolor
-										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis dolor, modi quibusdam deserunt vel
-										.icon 
-											i.fa.fa-arrow-right
+				img(src="./img/home-cover-3.png", alt="home-cover").img-fluid
+				h3 PT EVENTS 
+					span - Ghi lại dấu ấn hạnh phúc của cuộc đời bạn
+				p
+					a.button-slider(href="") Xem thêm
+	section.about-us
+		.container
+			.row.pt-5
+				.col-12.order-2.col-md-6.order-md-1
+					.intro-text
+						p.title về chúng tôi
+						h3 pt event
+						p.detail Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta dolorem delectus soluta ipsum nesciunt officiis 
+						span Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rae tenetur magni cum eos facere distinctio quo. Earum nobis fugit aliquid asperiores suscipit numquam autem distinctio nostrum,  iusto inventore.
+				.col-12.order-1.col-md-6.order-md-2
+					a(href="#")
+						figure
+							.intro-img
+								
+								img(src="./img/play-3.png", alt="").img-fluid.img-hover
+								img(src="./img/event.png", alt="event").img-fluid
+			.row.py-5
+				.col
+					.ideas
+						.left-img
+							img(src="./img/icon-1.png", alt="logo").img-fluid 
+						p.right-text Uy tín chất lượng
+				.col
+					.ideas
+						.left-img
+							img(src="./img/icon-2.png", alt="logo").img-fluid 
+						p.right-text Ý tưởng sáng tạo
+				.col
+					.ideas
+						.left-img
+							img(src="./img/icon-3.png", alt="logo").img-fluid 
+						p.right-text Trang thiết bị đạt chuẩn
+				.col
+					.ideas
+						.left-img
+							img(src="./img/icon-4.png", alt="logo").img-fluid 
+						p.right-text Tổ chức theo quy trình
+				.col
+					.ideas
+						.left-img
+							img(src="./img/icon-5.png", alt="logo").img-fluid 
+						p.right-text Chi phí tiết kiệm
+	section.service
+		.container
+			.row.pt-5.text-center
+				.col
+					h4 Lorem,ipsum dolor
+					h3 Lorem ipsum dolor sit
+			.row.pt-5.pb-5
+				.col-12.col-md-4
+					figure
+						img(src="./img/service-3.png", alt="service").img-fluid
+						figcaption
+							h4 sự kiện
+							p.detail Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab repudiandae consectetur nisi explicabo quae, neque ducimus obcaecati? Cupiditate consequatur impedit maioresy
+
+				.col-12.col-md-4
+					figure
+						img(src="./img/service-3.png", alt="service").img-fluid
+						figcaption
+							h4 sự kiện
+							p.detail Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab repudiandae consectetur nisi explicabo quae, neque ducimus obcaecati? Cupiditate consequatur impedit maioresy
+				.col-12.col-md-4
+					figure
+						img(src="./img/service-3.png", alt="service").img-fluid
+						figcaption
+							h4 sự kiện
+							p.detail Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab repudiandae consectetur nisi explicabo quae, neque ducimus obcaecati? Cupiditate consequatur impedit maioresy
+
+	section.special-event
+		.container
+			.row.text-center
+				.col.pt-3
+					.se-text
+						h4 những chương trình sự kiện đã thực hiện
+						h3 sự kiện nổi bật
+			.row
+				.col
+					.owl-two.owl-carousel.owl-theme
+						.item
+							img(src="./img/event-left.png", alt="")
+							.se-text
+								h4 team building
+								h5 Lorem ipsum dolor sit amet consectetur
+						.item
+							img(src="./img/event-mid.png", alt="")
+							.se-text
+								h4 team building
+								h5 Lorem ipsum dolor sit amet consectetur
+						.item
+							img(src="./img/event-right.png", alt="")
+							.se-text
+								h4 team building
+								h5 Lorem ipsum dolor sit amet consectetur
+
+				
+	section.service-combo
+		.container
+			.row.pt-5.text-center
+				.col
+					h3 gói dịch vụ
+			.row
+				.owl-three.owl-carousel.owl-theme
+					.col-12.col-sm-6.col-md-2
+						.item
+							figure
+								img(src="./img/pack-1.png", alt="pack").img-fluid
+								figcaption tổ chức sự kiện
+					.col-12.col-sm-6.col-md-2
+						.item
+							figure
+								img(src="./img/pack-2.png", alt="pack").img-fluid
+								figcaption cung cấp nhân sự
+					.col-12.col-sm-6.col-md-2
+						.item
+							figure
+								img(src="./img/pack-3.png", alt="pack").img-fluid
+								figcaption tư vấn set up trung tâm hội nghị - tiệc cưới
+					.col-12.col-sm-6.col-md-2
+						.item
+							figure
+								img(src="./img/pack-4.png", alt="pack").img-fluid
+								figcaption cho thuê thiết bị sự kiện
+					.col-12.col-sm-6.col-md-2
+						.item
+							figure
+								img(src="./img/pack-1.png", alt="pack").img-fluid
+								figcaption cho thuê thiết bị sự kiện
+					.col-12.col-sm-6.col-md-2
+						.item
+							figure
+								img(src="./img/pack-2.png", alt="pack").img-fluid
+								figcaption cho thuê thiết bị sự kiện
+	section.sale
+		.container
+			.row.text-center
+				.col
+					h3 khuyến mãi
+			.row
+				.col-12.col-md-4
+					figure
+						img(src="./img/sale-1.png", alt="sale-banner").img-fluid
+						figcaption
+							h2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus
+							hr.dash
+							h4 
+								i.fa.fa-calendar
+									span 28/12/2018
+							h5
+								span  Xem thêm
+									i.fa.fa-angle-double-right
+								
+
+				.col-12.col-md-4
+					figure
+						img(src="./img/sale-1.png", alt="sale-banner").img-fluid
+						figcaption
+							h2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus
+							hr.dash
+							h4 
+								i.fa.fa-calendar
+									span 28/12/2018
+							h5
+								span  Xem thêm
+									i.fa.fa-angle-double-right
+				.col-12.col-md-4
+					figure
+						img(src="./img/sale-1.png", alt="sale-banner").img-fluid
+						figcaption
+							h2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus
+							hr.dash
+							h4 
+								i.fa.fa-calendar
+									span 28/12/2018
+							h5
+								span  Xem thêm
+									i.fa.fa-angle-double-right
+			.row.d-none.d-md-block
+				.col
+					a(href="#")
+						.phone
+							i.fa.fa-phone
+	section.support
+		.container
+			.row.text-center
+				.col-12.col-md-6
+					.support-text
+						h3 Lorem ipsum dolor sit
+						span Lorem ipsum, dolor sit 
+						p
+							a.sp-button(href="#") Call(48445464)
+						p.detail PT Event Lorem ipsum dolor, sit amet consec
+				.col-12.col-md-6
+					form
+						.form-group
+							label.lb-1 Support
+							p
+							label Lorem, ipsum dolor sit amet consectetur adipisicing elit
+							input#inputName.form-control(type='text', placeholder='Họ và tên')
+						.form-group
+							input#inputMail.form-control(type='text', placeholder='Email')
+						.form-group
+							input#inputPhone.form-control(type='text', placeholder='Điện thoại')
+						.form-group
+							input#inputService.form-control(type='text', placeholder='Service')
+						p.pt-3
+							a(href="#").sp-button Sign in
+
+

@@ -1,24 +1,734 @@
 body
+	background: #fff
+	.home-slider
+		.owl-one
+			.item
+				img
+					width: 100%
+				h3
+					font-size: 1.3rem
+					+pad(2rem 2rem 1rem 2rem)
+					span
+						font-size: 1.1rem
+						font-weight: 500
 
-	.home-form
+				.button-slider
+					color: #fff
+					+pad(0.75rem 2rem 0.75rem 2rem)
+					font-size: 1rem
+					text-transform: uppercase
+					text-decoration: none
+					background: linear-gradient(90deg, #404187, #ce3438 )
+						
+			.owl-nav
+				margin-top: -0.5rem
+				+pad(1rem null 1rem null)
+				.owl-next,.owl-prev
+					width: 3rem
+					background: rgba(#000,0.2)
+					height: 3rem
+					span
+						color: #fff
+						line-height: 2rem
+						text-align: center
+						font-size: 2rem
+		+media-breakpoint-up(sm)
+			.owl-one
+				.item
+					h3
+						font-size: 1.3rem
+					.button-slider
+		+media-breakpoint-up(md)
+			.owl-one
+				.item
+					position: relative
+					h3
+						width: 18rem
+						text-align: justify
+						word-wrap: break-word
+						color: #fff
+						font-size: 1.7rem
+					
+						+pos(abs,50%)
+						left: 16%
+						transform: translateY(-50%)
+						span
+							font-size: 1.5rem
+							font-weight: 400
+					p
+						+pos(abs, 70%)
+						left: 19%
+						
+				.owl-dots
+					+pos(abs,null null 2rem 50%)
+					transform: translateX(-50%)
+					.owl-dot
+						span
+							background: none
+							border: 1px solid #fff
+						&.active
+							span
+								background: #fff
+		+media-breakpoint-up(lg)
+			.owl-one
+				.item
+					h3
+						left: 15%
+						width: 20rem
+						font-size: 1.7rem
+						font-weight: 500
+						span
+							font-size: 1.5rem
+							font-weight: 400
+					p
+						left: 18%
+		+media-breakpoint-up(xl)
+			.owl-one
+				.item
+					h3
+						left: 18%
+						width: 22rem
+						font-size: 2rem
+						font-weight: 500
+						span
+							font-size: 1.7rem
+							font-weight: 400
+					p
+						left: 20%
+	.about-us
+		.intro-text
+			+pad(1rem 2rem 3rem 1rem)
+			.title
+				text-transform: uppercase
+				font-size: 0.8rem
+				font-weight: 700
+				color: #d6d6d6
+			h3
+				background: linear-gradient(90deg, #404187, #ce3438 )
+				text-transform: uppercase
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+			.detail
+				text-align: justify
+				span
 		figure
+			.intro-img
+				border-radius: 0.5rem
+				position: relative
+				overflow: hidden
+				&:before
+					+hover-bg
+				img
+					width: 100%
+				.img-hover
+					+pos(abs,50% null null 50%)
+					transform: translateX(-50%) translateY(-50%)
+					width: 4rem
+					height: 4rem
+					z-index: 99
+		.ideas
+			width: 100%
+			height: 4rem
+			line-height: 1rem
+			border: #c5c5c5
+			border-right-style: dashed
+			border-right-width: thin
+			word-wrap: break-word
+			.left-img
+				float: left
+				
+			.right-text
+				font-size: 1rem
+				font-weight: 600
+				+mar(1rem null 0 3rem)
+				+pad(1rem null null 3rem)
+				color: blue
+		+media-breakpoint-up(sm)
+			.intro-text
+				.title
+					font-size: 1rem
+				h3
+					font-size: 1.8rem
+				.detail
+					font-size: 1.1rem
+					font-weight: 300
+				span
+					font-size: 1.1rem
+					font-weight: 300
+			figure
+				.intro-img
+					.img-hover
+						width: 5rem
+						height: 5rem
+				
+		+media-breakpoint-up(md)
+			.intro-text
+				.title
+					font-size: 0.7rem
+				h3
+					font-size: 1.5rem
+				.detail
+					font-size: 0.8rem
+					font-weight: 300
+				span
+					font-size: 0.8rem
+					font-weight: 300
+	
+
+		+media-breakpoint-up(lg)
+			.intro-text
+				.title
+					font-size: 1.2rem
+				h3
+					font-size: 2rem
+				.detail
+					font-size: 1.2rem
+					font-weight: 300
+				span
+					font-size: 1.2rem
+					font-weight: 300
+
+		+media-breakpoint-up(xl)
+			.intro-text
+				.title
+					font-size: 1rem
+				h3
+					font-size: 2.5rem
+				.detail
+					font-size: 1.4rem
+					font-weight: 300
+				span
+					font-size: 1.4rem
+					font-weight: 300
+	.service
+		background: url('../img/pt-bg-2.png')
+		clip-path: ellipse(100% 100% at 50% 80%)
+		background-size: cover
+		position: relative
+		overflow: hidden
+		&:before
+			+hover-bg(#0a2348,0.9)
+
+		height: 100%
+		h4
+			text-transform: uppercase
+			color: #fff
+			font-size: 0.8rem
+		h3
+			text-transform: uppercase
+			color: #fff
+			position: relative
+			font-size: 1.8rem
+			&:before
+				+before-tag(-1rem)
+		figure
+			position: relative
+			overflow: hidden
+			border-radius: 0.5rem
+			
 			img
 				width: 100%
 			figcaption
-				+pad(1rem)
+				text-align: center
+				background: linear-gradient(90deg, rgba(#404187,0.8),rgba( #ce3438,0.8) )
+				width: 100%
+				height: 14%
+				transform: translateX(-50%)
+				+pos(abs, null null 0 50%)
+
+				h4
+					position: relative
+					top: 50%
+					transform: translateY(-50%)
+					text-transform: uppercase
+					font-size: 1.1rem
+				.detail
+					display: none
+			&:hover
+				figcaption
+					word-wrap: break
+					+pad(25% 2rem 25% 2rem)
+					+pos(abs,50% null 0 50%)
+					transform: translateX(-50%) translateY(-50%)
+					width: 100%
+					height: 100%
+
+					h4
+						font-size: 1.3rem
+						top: 0
+					.detail
+						display: contents
+						color: #fff
+						text-align: justify
+						font-size: 1rem
+	+media-breakpoint-up(sm)
+		.service
+			figure
+				&:hover
+					figcaption
+						+pad(45% 2rem 25% 2rem)
+	+media-breakpoint-up(md)
+		.service
+			clip-path: ellipse(100% 75% at 50% 75%)
+			figure
+				figcaption
+					h4
+						font-size: 1rem
+					.detail
+						font-size: 0.7rem
+						font-weight: 300
+				&:hover
+					figcaption
+						+pad(10% 2rem 25% 2rem)
+	+media-breakpoint-up(lg)
+		.service
+			figure
+				figcaption
+					h4
+						font-size: 1.2rem
+					.detail
+						font-size: 1.2rem
+						font-weight: 400
+				&:hover
+					figcaption
+						+pad(25% 2rem 25% 2rem)
+	+media-breakpoint-up(xl)
+		.service
+			figure
+				figcaption
+					h4
+						font-size: 1.2rem
+					.detail
+						font-size: 1.2rem
+						font-weight: 400
+				&:hover
+					figcaption
+						+pad(35% 3rem 25% 3rem)
+	.special-event
+		background: url('../img/sevice-bg.png')
+		background-size: cover
+		background-repeat: none
+		position: relative
+		overflow: hidden
+		&:before
+			+hover-bg(#fff,0.8)
+		h3
+			position: relative
+			&:before
+				+before-tag(-1rem)
+		.se-text
+			+pad(2rem 2rem null 2rem)
+			h4
+				text-transform: uppercase
+				color: #000
+				font-size: 0.8rem
+			h3
+				text-transform: uppercase
+				color: #000
+				font-size: 1.8rem
+		.owl-two
+			position: relative
+			+pad(4rem null 1rem null)
+			.owl-item
+				transition: ease all-in-out 0.5s
+			
+					// This section is navigation the nav bar change size of nav and remove weird ouline on hover focus
+				.item
+					.se-text
+						+pad(1rem 2rem null 2rem)
+						text-align: center
+						h4
+							font-size: 1rem
+							background: #000
+							width: 100%
+							font-weight: 400
+							color: #fff
+						h5
+							+pad(1rem null 3rem null )
+							font-size: 1rem
+							
+							font-weight: 400
+							color: #000
+
+
+		
+			.owl-nav
+				height: 5rem
+				.owl-prev,.owl-next
+					transform: translateY(-50%)
+					span
+						color: #000
+						font-size: 5rem
+						outline: none
+					&:hover
+						background: none
+						outline: none
+					&:focus
+						outline: none
+		+media-breakpoint-up(sm)
+			.owl-two
+				.owl-item
+					.item
+						.se-text
+							+pad(2rem 2rem null 2rem)
+							text-align: center
+							h4
+								font-size: 1.5rem
+								background: #000
+								width: 100%
+								height: 2rem
+								font-weight: 400
+								color: #fff
+							h5
+								font-size: 1rem
+		+media-breakpoint-up(md)
+			.owl-two
+				.owl-item
+					&:active
+					
+					&.center
+						transform: scale(1.2)
+						z-index: 99
+						
+					&:not(.center)
+						transform: scale(0.85)
+						position: relative
+						overflow: hidden
+						display: ''
+						&:before
+							+hover-bg
+							z-index: 999
+					.item
+						.se-text
+							+pos(abs,null null 0 0)
+							height: 55%
+							width: 100%
+							background: linear-gradient(0deg, rgba(#404187,1),rgba( #fff,0) )
+							h4
+								+pos(abs,null null 35% 5%)
+								font-size: 0.8rem
+								color: #000
+								width: 7rem
+								+pad(null 0.5rem null 0.5rem)
+								text-transform: uppercase
+								height: 1rem
+								background: #fff
+							h5
+								+pos(abs,null null -5% 5%)
+								word-wrap: break-word
+								text-align: justify
+								width: 100%
+								color: #fff
+								font-size: 0.8rem
+				.owl-nav
+					.owl-prev,.owl-next
+						+pos(abs,50%)
+						span
+							color: #fff
+					.owl-next
+						right: 2rem
+					.owl-prev
+						left: 2rem
+		+media-breakpoint-up(lg)
+			.owl-two
+				.owl-item
+					.item
+						.se-text
+							h4
+								+pos(abs,null null 35% 5%)
+								height: 2rem
+								line-height: 2rem
+							h5
+								+pos(abs,null null 5% 5%)
+								font-size: 1.2rem
+				.owl-nav
+					.owl-next
+						right: 4rem
+					.owl-prev
+						left: 4rem
+		+media-breakpoint-up(xl)
+			.owl-two
+				.owl-item
+					.item
+						.se-text
+							h4
+								+pos(abs,null null 40% 5%)
+								height: 2rem
+								line-height: 2rem
+							h5
+								+pos(abs,null null 10% 5%)
+								font-size: 1.2rem
+				.owl-nav
+					.owl-next
+						right: 5rem
+					.owl-prev
+						left: 5rem
+	.service-combo
+		background: url('../img/pack-bg.png')
+		background-size: cover
+		background-repeat: none
+		position: relative
+		overflow: hidden
+		&:before
+			+hover-bg-3
+		h3
+			text-transform: uppercase
+			color: #fff
+			position: relative
+			&:before
+				+before-tag(-1rem)
+		.owl-three
+		
+			.item
+				+mar(4rem null null null)
+				text-align: center
+				figure
+					border-radius: 2rem
+					background: linear-gradient(0, rgba(#404187,0.8),rgba( #404187,0.4) )
+					img
+						transform: scale(0.5)
+					figcaption
+						+pad(null null 3rem null)
+						
+						text-transform: capitalize
+						color: #fff
+						font-weight: 500
+						font-size: 1.3rem
+			.owl-nav
+				height: 5rem
+				.owl-prev,.owl-next
+					transform: translateY(-50%)
+					span
+						color: #fff
+						font-size: 5rem
+						outline: none
+					&:hover
+						background: none
+						outline: none
+					&:focus
+						outline: none
+		+media-breakpoint-up(sm)
+			.owl-three
+				.item
+					figure
+						width: 18rem
+						height: 18rem
+						figcaption
+							+pad(null 2rem null 2rem)
+							+mar(-3rem null null null)
+		+media-breakpoint-up(md)
+			.owl-three
+				.item
+					figure
+						width: 22rem
+						height: 22rem
+						figcaption
+							+pad(null 2rem 4rem 2rem)
+							+mar(-4rem null null null)
+				.owl-nav
+					.owl-prev,.owl-next
+						+pos(abs,45%)
+						span
+							color: rgba(#fff,0.5)
+					.owl-next
+						right: -2rem
+					.owl-prev
+						left: -2rem
+		+media-breakpoint-up(lg)
+			.owl-three
+				.item
+					+mar(4rem null 4rem null)
+					figure
+						width: 16rem
+						height: 16rem
+						img
+							transform: scale(0.4)
+						
+						figcaption
+							+pad(null 1rem null 1rem)
+							+mar(-4rem null null null)
+							font-size: 1rem
+				.owl-nav
+					.disabled
+						display: ''
+					.owl-prev,.owl-next
+						+pos(abs,40%)
+					.owl-next
+						right: -2rem
+					.owl-prev
+						left: -2rem
+		+media-breakpoint-up(xl)
+			.owl-three
+				.item
+					
+					figure
+						img
+							transform: scale(0.4)
+						width: 19rem
+						height: 19rem
+						figcaption
+							+pad(null 1rem null 1rem)
+							+mar(-4rem null null null)
+							font-size: 1rem
+	.sale
+		position: relative
+		background: #fff
+		h3
+			text-transform: uppercase
+			color: #000
+			+pad(5rem null null null)
+			position: relative
+			
+			&:before
+				+before-tag(-1rem)
+		.phone
+			+pos(abs,null -5rem 5rem null)
+			+phone-bg(5rem,5rem)
+			display: flex
+			background: rgba(red,0.5)
+			i
+				+phone-bg(3rem,3rem)
+				font-size: 2rem
+				color: #fff
+				
+				
+		figure
+			
+			+mar(4rem null 4rem null)
+			background: blue
+			-webkit-box-shadow: 0px 0px 0px 3px blue
+			-moz-box-shadow: 0px 0px 0px 3px blue
+			box-shadow: 0px 0px 0px 3px blue
+			height: 85%
+			img
+				width: 100%
+			figcaption
+				clear: both
+				+pad(1rem 0.5rem null 0.5rem)
+				h2
+					+pad(null null 2rem null)
+					font-weight: 400
+					color: #fff
+					font-size: 1.2rem
+				.dash
+					border-top: 1px solid grey
+				h4
+					float: left
+					font-size: 1rem
+					color: grey
+					span
+						padding-left: 0.4rem
+				h5
+					+pad(0.2rem null null null)
+					float: right
+					transform: translateY(-50%)
+					font-size: 1rem
+					color: grey
+					span
+						i 
+							padding-left: 0.4rem
+		+media-breakpoint-up(sm)
+			figure
+				+mar(4rem null 4rem null)
+				height: 85%
+		+media-breakpoint-up(md)
+			figure
+				+mar(4rem null 4rem null)
+				height: 78%
 		+media-breakpoint-up(lg)
 			figure
-				text-align: right
-				position: relative
-				width: 100%
-				img
-					width: 100%
-				figcaption
-					+pos(abs, 50% null null 0)
-					background: #fff
-					width: 50%
-					transform: translateY(-50%)
-					padding: 2rem 6rem 2rem 0
-					.icon
-						+pos(abs, 50%, 2rem null null)
-						transform: translateY(-50%)
+				+mar(4rem null 4rem null)
+				height: 80%
+	.support
+		background: url('../img/support-bg.png')
+		background-size: cover
+		background-repeat: none
+		position: relative
+		overflow: hidden
+		&:before
+			+hover-bg-2
+		.support-text
+			+pad(10rem null 2rem null)
+			text-align: center
+			h3
+				color: #fff
+				font-size: 1.3rem
+				font-weight: 300
+			span
+				color: #fff
+				font-weight: 500
+				font-size: 1.5rem
+				
+			.sp-button
+				line-height: 5rem
+				color: #000
+				+pad(0.75rem 3rem 0.75rem 3rem)
+				font-size: 1rem
+				text-transform: uppercase
+				text-decoration: none
+				background: #fff
+			.detail
+				color: #fff
+				font-size: 1rem
+				font-weight: 300
+		form
+			background: #1c1f3a
+			border-radius: 0.5rem
+			+mar(5rem null 5rem null)
+			+pad(2rem 2rem 2rem 2rem)
+			.form-group
+				.lb-1
+					font-size: 2rem
+					color: #fff
+				label
+					color: #fff
+				input
+
+					color: #fff
+					background: none
+					border: none
+					border-radius: 0
+					border-bottom: 1px solid rgba(#fff,0.5)
+				
+			.sp-button
+				color: #fff
+				+pad(0.75rem 2rem 0.75rem 2rem)
+				font-size: 1rem
+				text-transform: uppercase
+				text-decoration: none
+				background: linear-gradient(90deg, #404187, #ce3438 )
+		+media-breakpoint-up(sm)
+			.support-text
+				text-align: left
+				h3
+
+					font-size: 1.5rem
+					font-weight: 300
+				span
+
+					font-size: 1.8rem
+					
+				.detail
+		+media-breakpoint-up(md)
+			.support-text
+				text-align: left
+				h3
+
+					font-size: 1.5rem
+
+				span
+
+					font-size: 1.8rem
+					
+				.detail
+			form
+				text-align: left
+		+media-breakpoint-up(lg)
+			.support-text
+				h3
+					font-size: 1.7rem
+				span
+					font-size: 2rem
+				.detail
+			form
+				

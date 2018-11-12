@@ -1,28 +1,59 @@
 <!-- ////////////// HEADER ////////////// -->
-header.bg-light
+header
 	.container
-		nav.navbar.navbar-expand-lg.navbar-light
-			a.navbar-brand(href="#") 
-				img(src="./img/logo.png", alt="Logo")
-			//- Đây là nút sẽ hiển thị trong mobile
-			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
-				span.fa.fa-bars
-			#fullStackMenu.collapse.navbar-collapse
-				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
-				.mr-auto
-				ul.navbar-nav
-					li.nav-item.active
-						a.nav-link(href="index.html")
-							| Trang chủ
-					li.nav-item.dropdown
-						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Gian hàng
-						.dropdown-menu(aria-labelledby="dropdownFS")
-							a.dropdown-item(href="#") Nam
-							a.dropdown-item(href="#") Nữ
+		.menu-bar
+			.top-nav
+				ul.nav
 					li.nav-item
-						a.nav-link(href="services.html") Dịch vụ
+						a.nav-link(href="#")
+							i.fa.fa-phone 
+								span (028) 98641644
 					li.nav-item
-						a.nav-link(href="about.html") Về chúng tôi
+						a.nav-link(href="#")
+							i.fa.fa-facebook
 					li.nav-item
-						a.nav-link(href="contact.html") Liên hệ
+						a.nav-link(href="#")
+							i.fa.fa-twitter
+					li.nav-item
+						a.nav-link(href="#")
+							i.fa.fa-instagram
+					li.nav-item
+						a.nav-link(href="#")
+							i.fa.fa-globe 
+								span ENG
+			.bottom-nav
+				nav.navbar.navbar-expand-lg.navbar-light
+					a(href='#')
+						img(src="./img/logo.png", alt="Logo").img-fluid.
+					//- Đây là nút sẽ hiển thị trong mobile
+					button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation').ml-auto
+						span.navbar-toggler-icon
+					#navbarNavDropdown.collapse.navbar-collapse.ml-auto.pt-3
+
+						ul.navbar-nav.ml-auto.text-center
+							li.nav-item.dropdown
+								a.nav-link.dropdown-toggle-custom(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Giới thiệu
+								.dropdown-menu(aria-labelledby="dropdownFS")
+									a.dropdown-item(href="#") Nam
+									a.dropdown-item(href="#") Nữ
+							li.nav-item.dropdown
+								a.nav-link.dropdown-toggle-custom(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dịch vụ
+								.dropdown-menu(aria-labelledby="dropdownFS")
+									a.dropdown-item(href="#") Nam
+									a.dropdown-item(href="#") Nữ
+							li.nav-item
+								a.nav-link(href="services.html") Sự kiện nổi bật
+							li.nav-item
+								a.nav-link(href="#") tin tức - sự kiện
+							li.nav-item.dropdown
+								a.nav-link.dropdown-toggle-custom(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Hỗ Trợ
+								.dropdown-menu(aria-labelledby="dropdownFS")
+									a.dropdown-item(href="#") Nam
+									a.dropdown-item(href="#") Nữ
+							li.nav-item
+								a.nav-link(href="#") Tuyển dụng 
+							li.nav-item
+								a.nav-link(href="#") Liên hệ
+							
+						
 <!-- ////////////// HEADER ////////////// -->
