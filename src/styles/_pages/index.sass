@@ -128,20 +128,20 @@ body
 					z-index: 99
 		.ideas
 			width: 100%
+			text-align: center
 			height: 4rem
-			line-height: 1rem
+			+mar(1rem 0.5rem 5rem 0.5rem)
+			line-height: 2rem
 			border: #c5c5c5
-			border-right-style: dashed
-			border-right-width: thin
 			word-wrap: break-word
-			.left-img
-				float: left
-				
-			.right-text
+			.ideas-img
+				display: flex
+				justify-content: center
+				align-items: center
+			.ideas-text
 				font-size: 1rem
 				font-weight: 600
-				+mar(1rem null 0 3rem)
-				+pad(1rem null null 3rem)
+				+pad(1rem null null 1rem)
 				color: blue
 		+media-breakpoint-up(sm)
 			.intro-text
@@ -174,7 +174,9 @@ body
 					font-size: 0.8rem
 					font-weight: 300
 	
-
+			.ideas
+				border-right-style: dashed
+				border-right-width: thin
 		+media-breakpoint-up(lg)
 			.intro-text
 				.title
@@ -209,7 +211,7 @@ body
 		&:before
 			+hover-bg(#0a2348,0.9)
 
-		height: 100%
+		
 		h4
 			text-transform: uppercase
 			color: #fff

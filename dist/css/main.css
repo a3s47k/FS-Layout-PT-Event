@@ -6662,22 +6662,24 @@ body {
       z-index: 99; }
   body .about-us .ideas {
     width: 100%;
+    text-align: center;
     height: 4rem;
-    line-height: 1rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 5rem;
+    margin-left: 0.5rem;
+    line-height: 2rem;
     border: #c5c5c5;
-    border-right-style: dashed;
-    border-right-width: thin;
     word-wrap: break-word; }
-    body .about-us .ideas .left-img {
-      float: left; }
-    body .about-us .ideas .right-text {
+    body .about-us .ideas .ideas-img {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    body .about-us .ideas .ideas-text {
       font-size: 1rem;
       font-weight: 600;
-      margin-top: 1rem;
-      margin-bottom: 0;
-      margin-left: 3rem;
       padding-top: 1rem;
-      padding-left: 3rem;
+      padding-left: 1rem;
       color: blue; }
   @media (min-width: 576px) {
     body .about-us .intro-text .title {
@@ -6703,7 +6705,10 @@ body {
       font-weight: 300; }
     body .about-us .intro-text span {
       font-size: 0.8rem;
-      font-weight: 300; } }
+      font-weight: 300; }
+    body .about-us .ideas {
+      border-right-style: dashed;
+      border-right-width: thin; } }
   @media (min-width: 992px) {
     body .about-us .intro-text .title {
       font-size: 1.2rem; }
@@ -6731,8 +6736,7 @@ body {
     clip-path: ellipse(100% 100% at 50% 80%);
     background-size: cover;
     position: relative;
-    overflow: hidden;
-    height: 100%; }
+    overflow: hidden; }
     body .service:before {
       content: '';
       display: block;
